@@ -18,6 +18,9 @@ Test accuracy achieved on kaggle : 0.9909
 ---------------
 
 [model 2.0](https://github.com/zeinsh/kaggle_tasks/blob/master/005-digit-recognizer/model2.ipynb)
+
+## MLP model
+
 ### Structure
 
 - Input layer 784 elements
@@ -26,12 +29,15 @@ Test accuracy achieved on kaggle : 0.9909
 - Output layer 10 neurons, sigmoid activation
 
 
+
 - Number of iterations 100
 - Batch gradient descent, batch size 64
 - Loss function: softmax_cross_entropy_with_logits
 - Xavier initialization
 - Adam optimization algoithm for backpropogation
     - learning rate 0.001
+
+
 
 * generalization score (on kaggle) 0.94957 
 * training accuracy: 0.97548
