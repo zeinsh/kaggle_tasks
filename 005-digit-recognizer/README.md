@@ -78,3 +78,27 @@ tensorflow
 * training time: 3min 7s
 
 ----------------------
+
+# MINSET digit recognizer using MLP
+
+[model 3.0](https://github.com/zeinsh/kaggle_tasks/blob/master/005-digit-recognizer/model3.0.ipynb)
+
+## Model 3.0 - Keras
+### Structure
+
+Use 200 neurons in hidden layers instead of 25,12 in model2 and add droup out with probability of 0.8
+
+- Input layer 784 elements
+- Hidden layer 1, 200 neurons, relu activation, dropout keep_prob=0.8
+- Hidden layer 2, 200 neurons, relu activation, dropout keep_prob=0.8
+- Output layer 10 neurons, sigmoid activation
+
+
+- Number of iterations 50
+- Loss function: categorical_crossentropy
+- Adam optimization algoithm for backpropogation
+    - learning rate 0.001
+
+* generalization score (on kaggle)  0.977
+* training accuracy: 0.9946
+* validation accuracy: 0.9802
